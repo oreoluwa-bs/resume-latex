@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Oreoluwa Bimbo-Salami} \\ \vspace{1pt}
+    \small +234-809-801-0828 $|$ \href{mailto:oreoluwabs25@gmail.com}{\underline{oreoluwabs25@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/oreoluwa-bimbo-salami-a40a79199/}{\underline{linkedin.com/in/oreoluwa-bimbo-salami-a40a79199/}} $|$
+    \href{https://github.com/oreoluwa-bs}{\underline{github.com/oreoluwa-bs}} $|$  \small Lagos, Nigeria
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Covenant University}{Nigeria}
+      {Bachelor of Science in Computer Science}{2020}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Product Development Associate}{March 2022 -- Present}
+      {Spurt!} { }
+      \resumeItemListStart
+        \resumeItem{Implemented user friendly, responsive, performant and secure web applications.}
+        \resumeItem{Audited and improved UX, accessibility and load times of our in house products.}
+        \resumeItem{Collaborated with other engineers and stakeholders in building Sync! - A productivity management and talent acquisition tool, improving performance and user experience.}
+        \resumeItem{Implemented core functionalities like customer onboarding, product / team management features, in-app messaging, payments and more, using NextJS(React).}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Developer}{April 2021 -- Present}
+      {Neukleos} { }
+      \resumeItemListStart
+        \resumeItem{Developed a solution aimed at improving employee book learning engagement and retention by 40\%.}
+        \resumeItem{Implemented UI designs and integrated REST APIs for the clients projects and websites}
+        \resumeItem{Audited and improved UX, accessibility and load times of our in house product thereby improving user satisfaction.}
+        \resumeItem{Implemented user friendly web applications with a optimisations for mobile and performance.}
+        \resumeItem{Experience with client side state management tools such as Zustand.}
+        \resumeItem{Developed design tools to automate a design process with Figma.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Software Developer Intern}{Jan 2019 -- July 2019}
+      {Neukleos} { }
+      \resumeItemListStart
+        \resumeItem{Worked with a lean project team which included members with diverse set of development skills to innovate and develop tools and solutions for our clients.}
+        \resumeItem{Experience with frontend web technologies such as HTML5, CSS3, and Javascript frameworks such as React.}
+        \resumeItem{Experience with client side state management tools such as Redux.}
+        \resumeItem{Developed reusable components with front‐end libraries such as Styled Components, Bootstrap and Custom tools for future use.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Nodnot} $|$ \emph{NextJS, TypeScript, IndexDB, Git}}{Feb 2023}
+          \resumeItemListStart
+            \resumeItem{A node based AI powered note taking application with a notion like experience with additional features such as Image uploads, web embeds, secure storage with indexDB}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Tinissue} $|$ \emph{Remix, TypeScript, MySQL, Git}}{Aug 2023}
+          \resumeItemListStart
+            \resumeItem{A project management application for teams and personal used with robust analytics, team management, milestone management}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, SQL (Postgres/MySQL), HTML/CSS} \\
+     \textbf{Frameworks}{: React(NextJS/Remix), Astro, Node.js, REST, GraphQL} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code} \\
+     \textbf{Libraries}{: TRPC, CSS-in-JS, Tailwind}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
