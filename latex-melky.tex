@@ -1,0 +1,143 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{array}
+    \usepackage{textcomp}
+    \usepackage{varwidth}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+    \usepackage[hidelinks]{hyperref}
+    \hypersetup{
+      colorlinks=false
+    }
+    \urlstyle{same}
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+    \vspace*{-40pt}
+
+    %==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+  {\Huge \scshape {Oreoluwa Bimbo-Salami}}\\
+  Lagos, Nigeria $\cdot$ \href{mailto:oreoluwabs25@gmail.com}{oreoluwabs25@gmail.com} $\cdot$ \href{tel:+234 8098010828}{+234 8098010828} $\cdot$ \url{https://oreoluwabs.com}\\
+\end{center}
+
+%==== Education ====%
+      \header{Education}
+
+      \textbf{Covenant University}\hfill Nigeria\\
+B.Sc Computer Science \hfill 01/09/2016 - 17/10/2020\\
+
+\vspace{2mm}
+
+%==== Experience ====%
+      \header{Work Experience}
+      \vspace{1mm}
+
+      \textbf{Spurt!}\\
+          \textit{Product Development Associate} \hfill March 2022 - Present\\
+          \vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+      \item Developed user-friendly, responsive, and performant web applications for Spurt!, ensuring a seamless user experience and optimal performance. Implemented robust security measures to protect sensitive user data and maintain a secure environment.
+      \item Improved user experience, accessibility, and load times of in-house products by implementing strategic design changes and performance optimizations, resulting in a significant 50\% increase in overall performance.
+      \item Developed and executed strategic plans for the implementation of Sync! - a productivity management and talent acquisition tool at Spurt!, resulting in enhanced performance and user experience through effective collaboration with engineers and stakeholders.
+      \item Developed and implemented key features including customer onboarding, product and team management, in-app messaging, and payments using Next.js (React), resulting in a seamless user experience and increased customer satisfaction for Spurt!'s platform.
+\end{itemize}
+      \textbf{Neukleos}\\
+          \textit{Software Developer} \hfill April 2021 - Present\\
+          \vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+      \item Developed and implemented a book learning platform at Neukleos, resulting in a significant increase of 40\% in employee engagement and retention rates.
+      \item Developed and implemented intuitive user interfaces by integrating REST APIs, ensuring seamless functionality and enhancing user experience for client projects and websites at Neukleos.
+      \item Revamped and enhanced the user experience, accessibility, and load times of our in-house product, resulting in a remarkable 25\% overall performance gain and an impressive 80\% surge in positive client reviews.
+      \item Developed and deployed user-friendly web applications for Neukleos, with a focus on optimizing mobile performance and enhancing overall user experience.
+      \item Developed and maintained client-side state management systems using Zustand, Redux, and React Context, ensuring efficient data flow and seamless user experiences for Neukleos' web applications.
+      \item Developed and implemented automated design tools using Figma, resulting in a 10\% reduction in design time for Neukleos.
+\end{itemize}
+      \textbf{Neukleos}\\
+          \textit{Software Developer Intern} \hfill Jan 2019 - July 2019\\
+          \vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+      \item Collaborated with a cross-functional project team consisting of developers with diverse skill sets to drive innovation and develop cutting-edge tools and solutions for Neukleos' clients, resulting in enhanced client satisfaction and increased business opportunities.
+      \item Developed responsive and user-friendly web applications using HTML5, CSS3, and JavaScript frameworks such as React, resulting in enhanced user experience and increased customer satisfaction.
+      \item Developed and maintained client-side state management using Redux, ensuring efficient data flow and seamless user experience for Neukleos' web applications.
+      \item Developed reusable front-end components using popular libraries such as Styled Components, Bootstrap, and custom tools, ensuring efficient and scalable development for future projects at Neukleos.
+\end{itemize}
+
+\header{Skills}
+\begin{tabular}{V{5cm} @{\hskip 0.6cm} V{12cm}}
+Languages: & JavaScript, TypeScript, SQL (Postgres/MySQL), HTML/CSS \\
+Frameworks: & React(NextJS/Remix), Astro, Vue, Node.js, REST, GraphQL \\
+Developer Tools: & Git, Docker, VS Code \\
+Libraries: & TRPC, CSS-in-JS, Tailwind, Zustand \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Projects}
+      {\textbf{Nodnot}} {\sl NextJS, TypeScript, IndexDB, Git} \hfill \url{https://nodnot.vercel.app}\\
+A node based AI powered note taking application with a notion like experience with additional features such as Image uploads, web embeds, secure storage with indexDB\\
+\vspace*{2mm}
+      {\textbf{Tinissue}} {\sl Remix, TypeScript, MySQL, Git} \hfill \url{https://tinissue-production.up.railway.app}\\
+A project management application for teams and personal used with robust analytics, team management, milestone management\\
+\vspace*{2mm}
+
+    \end{document}
