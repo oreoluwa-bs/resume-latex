@@ -1,0 +1,227 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Boluwarin Bimbo-Salami} \\ \vspace{1pt}
+    \small +234-814-028-1050 $|$ \href{mailto:boluwarinbimbosalami@gmail.com}{\underline{boluwarinbimbosalami@gmail.com}} $|$ 
+    % \href{https://linkedin.com/in/oreoluwa-bimbo-salami-a40a79199/}{\underline{linkedin.com/in/oreoluwa-bimbo-salami-a40a79199/}} $|$
+    \href{https://github.com/OwlsOculus}{\underline{github.com/OwlsOculus}} $|$  
+    \small Lagos, Nigeria
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Redeemers University}{Nigeria}
+      {Bachelor of Science in Computer Science}{2022 - Present}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+
+% % -----------Multiple Positions Heading-----------
+% %    \resumeSubSubheading
+% %     {Software Engineer I}{Oct 2014 - Sep 2016}
+% %     \resumeItemListStart
+% %        \resumeItem{Apache Beam}
+% %          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+% %     \resumeItemListEnd
+% %    \resumeSubHeadingListEnd
+% %-------------------------------------------
+
+%     \resumeSubheading
+%       {Product Development Associate}{March 2022 -- Present}
+%       {Spurt!} { }
+%       \resumeItemListStart
+%         \resumeItem{Developed user-friendly, responsive, and performant web applications for Spurt!, ensuring a seamless user experience and optimal performance.}
+%         % Implemented robust security measures to protect sensitive user data and maintain a secure environment.
+%         \resumeItem{Improved user experience, accessibility, and load times of in-house products by implementing strategic design changes and performance optimizations, resulting in a significant 50\% increase in overall performance.}
+%         \resumeItem{Developed and executed strategic plans for the implementation of Sync! - a productivity management and talent acquisition tool at Spurt!, resulting in enhanced performance and user experience through effective collaboration with engineers and stakeholders.}
+%         \resumeItem{Developed and implemented key features including customer onboarding, product and team management, in-app messaging, and payments using Next.js (React), resulting in a seamless user experience and increased customer satisfaction for Spurt!'s platform.}
+%     \resumeItemListEnd
+
+%     \resumeSubheading
+%       {Software Developer}{April 2021 -- Present}
+%       {Neukleos} { }
+%       \resumeItemListStart
+%         \resumeItem{Developed and implemented a book learning platform at Neukleos, resulting in a significant increase of 40\% in employee engagement and retention rates.}
+%         \resumeItem{Developed and implemented intuitive user interfaces by integrating REST API's, ensuring seamless functionality and enhancing user experience for client projects.}
+%         \resumeItem{Revamped and enhanced the user experience, accessibility, and load times of our in-house product, resulting in a remarkable 25\% overall performance gain and an impressive 80\% surge in positive client reviews.}
+%         \resumeItem{Developed and deployed user-friendly web applications for Neukleos, with a focus on optimizing mobile performance and enhancing overall user experience.}
+%         \resumeItem{Developed and maintained client-side state management systems using Zustand, Redux, and React Context, ensuring efficient data flow and seamless user experiences for web applications.}
+%         \resumeItem{Developed and implemented automated design tools using Figma, resulting in a 10\% reduction in design time for Neukleos.}
+%       \resumeItemListEnd
+
+%       \resumeSubheading
+%       {Software Developer Intern}{Jan 2019 -- July 2019}
+%       {Neukleos} { }
+%       \resumeItemListStart
+%         \resumeItem{Collaborated with a cross-functional project team consisting of developers with diverse skill sets to drive innovation and develop cutting-edge tools and solutions for clients, resulting in enhanced client satisfaction and increased business opportunities.}
+%         \resumeItem{Developed responsive and user-friendly web applications using HTML5, CSS3, and JavaScript frameworks such as React, resulting in enhanced user experience and increased customer satisfaction.}
+%         \resumeItem{Developed and maintained client-side state management using Redux, ensuring efficient data flow and seamless user experience for web applications.}
+%         \resumeItem{Built reusable front-end components using popular libraries such as Styled Components, Bootstrap, and custom tools, ensuring efficient and scalable development for future projects.}
+%       \resumeItemListEnd
+
+%   \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Eden’s Apple} $|$ \emph{Python}}{}
+          \resumeItemListStart
+            \resumeItem{A 2D game where you control a snake that eats an apple and grows larger. The goal is to grow as large as possible without biting or hitting yourself}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Escape Delusion} $|$ \emph{Python}}{}
+          \resumeItemListStart
+            \resumeItem{An endless runner game inspired by Googles dinosaur game where players navigate obstacles to achieve a high score}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Road Rage} $|$ \emph{Python}}{}
+          \resumeItemListStart
+            \resumeItem{A space dodging game where players dodge incoming opponents from space above whilst driving a car}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages}{: Python, HTML, CSS} \\
+      %  \textbf{Frameworks}{: React(NextJS/Remix), Astro, Vue, Node.js, REST, GraphQL} \\
+      \textbf{Developer Tools}{: VS Code} \\
+      \textbf{Other}{: Problem solving, Communication, Creativity} \\
+    %  \textbf{Libraries}{: TRPC, CSS-in-JS, Tailwind}
+    }}
+ \end{itemize}
+
+ %-----------Interests-----------
+\section{Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+  % \small{\item{Artificial Intelligence}}
+  % \small{\item{Virtual Reality}}
+  % \small{\item{Animation}}
+  % \small{\item{Web/Graphic Design and Development}}
+  \small{\item{
+    {Artificial Intelligence} \\
+    {Virtual Reality} \\
+    {Animation} \\
+    {Web/Graphic Design and Development}  \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
