@@ -1,0 +1,256 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingExtra}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}
+    \par\vspace{2pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=$\vcenter{\hbox{\tiny$\bullet$}}$]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Oreoluwa Bimbo-Salami} \\ \vspace{1pt}
+    \small +234-809-801-0828 $|$ \href{mailto:oreoluwabs25@gmail.com}{\underline{oreoluwabs25@gmail.com}} $|$
+    \href{https://linkedin.com/in/oreoluwa-bimbo-salami-a40a79199/}{\underline{linkedin.com/in/oreoluwa-bimbo-salami-a40a79199/}} $|$
+    \href{https://github.com/oreoluwa-bs}{\underline{github.com/oreoluwa-bs}} $|$  \small Lagos, Nigeria
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+    {Frontend Engineer (Contract)}{August 2024}
+    {Tangerine Africa} { }
+    \resumeItemListStart
+        \resumeItem{Engineered a complex quote generation system for underwriters, automating end-to-end quote workflows and reducing manual effort.}
+        \resumeItem{Engineered payments, claims automation, and premium-calculation systems, reducing manual processing time.}
+        \resumeItem{Improved system-level performance by 35\% by redesigning rendering strategy (SSR/SSG), optimizing data-fetching paths and reducing client-server round trips.}
+        \resumeItem{Integrated Payload CMS and analytics tooling to empower marketing teams and accelerate content updates.}
+        \resumeItem{Led frontend development, audits, animations, and vendor management to align UX with business goals.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Frontend Developer (Contract)}{March 2022}
+    {Spurt!} { }
+    \resumeItemListStart
+        \resumeItem{Identified a lack of visibility into production failures and introduced centralized logging and monitoring with Grafana Cloud.}
+        \resumeItem{Designed and built a reusable UI component library and design system powering messaging, wallet, and calendar features.}
+        \resumeItem{Developed and implemented key features including customer onboarding, product and team management, in-app messaging, and payments using Next.js (React).}
+        \resumeItem{Built internal automation tools to streamline operational workflows, reducing manual coordination and improving system reliability across team processes.}
+        \resumeItem{Led end-to-end implementation of a productivity platform, defining frontend architecture, data models from concept to production.}
+    \resumeItemListEnd
+
+
+    \resumeSubheading
+    {Fullstack Engineer}{January 2026 -- March 2026}
+    {Benmore Technologies} { }
+    \resumeItemListStart
+        \resumeItem{Designed and deployed backend systems for a 2-sided marketplace, handling transactional workflows, state consistency, and payment orchestration.}
+        \resumeItem{Integrated payments infrastructure customer billing, provider payouts, transaction flows}
+    \resumeItemListEnd
+
+
+    \resumeSubheading
+    {Frontend Engineer (Full-Time)}{January 2025 -- September 2025}
+    {Rvysion!} { }
+    \resumeItemListStart
+        \resumeItem{Implemented onboarding and compliance systems with complex validation and multi-step workflows, ensuring correctness across user state transitions and regulatory constraints.}
+        % \resumeItem{Developed onboarding, business name, company registration and compliance management features for law-tech systems using React.}
+        \resumeItem{Developed user-friendly, responsive, and performant web applications, ensuring a seamless user experience and optimal performance.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Software Developer (Full-Time)}{April 2021 -- September 2025}
+    {Neukleos} { }
+    \resumeItemListStart
+        \resumeItem{Architected and launched a SaaS LMS platform from concept to production, designing system architecture, data models, and scalable backend services supporting multi-tenant usage, unlocking new B2B revenue streams.}
+        \resumeItem{Refactored and modernized legacy applications for creative and media clients across Africa.}
+        \resumeItem{Built 'NodeConnect' Figma plugin automating design resizing and improving productivity by 10\%.}
+        \resumeItem{Architected and deployed a book-learning platform that increased engagement by 40\% through gamification.}
+        \resumeItem{Integrated backend services with frontend systems and implemented observability (Sentry) to detect, trace, and resolve production issues proactively.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+  %-----------PROJECTS-----------
+  \section{Projects}
+      \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Well-Architected} $|$ \emph{React, TypeScript, AWS}}{\url{https://wellarchitected.notloudlabs.com}}
+            \resumeItemListStart
+              \resumeItem{Interactive AWS Solutions Architect practice platform with 44 real-world scenarios, drag-and-drop architecture canvas, and automated scoring across cost, performance, resilience, and security domains.}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Verasui} $|$ \emph{React, TypeScript, Vite}}{\url{https://verasui.notloudlabs.com}}
+            \resumeItemListStart
+              \resumeItem{AI-powered voice roleplay SaaS for mastering conversations. Built real-time voice interaction with diverse AI personas, session scoring, and subscription billing.}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Keen} $|$ \emph{Go, Tauri}}{\url{https://github.com/oreoluwa-bs/keen}}
+            \resumeItemListStart
+              \resumeItem{Open-source local image converter and compressor with CLI and desktop app. Supports batch processing, concurrent workers, EXIF handling, and 6+ output formats.}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Two Threads} $|$ \emph{React, TypeScript, Postgres, Go}}{\url{https://twothreads.app}}
+            \resumeItemListStart
+              \resumeItem{An app that keeps track of what you own, helps you decide what to wear, and recommends what to buy next — powered by an AI style assistant leveraging LLM-based inference to generate personalized suggestions from user-owned inventory.}
+            \resumeItemListEnd
+      \resumeSubHeadingListEnd
+
+
+
+%-----------COMMUNITY-----------
+\section{Community}
+ \resumeItemListStart
+     \resumeItem{Supported the onboarding and development of interns, helping them progress toward junior-level engineering responsibilities through guidance, feedback, and practical project work.}
+     \resumeItem{Opensource contributions to Typehero and RemixPWA.}
+     \resumeItem{Volunteered with Elevate Pixel Studios to support a design workshop.}
+     \resumeItem{Continued contributing to the Sheevolution Africa website after completing the original project engagement.}
+    \resumeItemListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Frontend}{: React (Next.js, Remix, Astro), Vue, TypeScript, Chakra UI, Tailwind, Zustand, Redux} \\
+     \textbf{Backend}{: Node.js(Express), Golang, REST/GraphQL, tRPC, SQL(Postgres/MySQL)} \\
+     \textbf{Infrastructure}{: Docker, AWS, CI/CD (GitHub Actions), Sentry, Payload CMS} \\
+     \textbf{Testing}{: Jest, Vitest, Cypress, Playwright} \\
+     \textbf{Tools}{: Git, Zed, VS Code} \\
+    }}
+ \end{itemize}
+
+
+ %-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheadingExtra
+    {Covenant University}{Nigeria}
+    {Bachelor of Science in Computer Science}{2020}
+    {Second Class Upper Division | CGPA: 4.22/5.00}{}
+    {\small Relevant coursework: Calculus, Vector Algebra, Linear Algebra, Statistical Methods, Statistical Computing, Mathematical Methods, Discrete Structures, Data Structures, Algorithms and Complexity Analysis, Artificial Intelligence, Computational Science and Numerical Methods, Computer Graphics and Animation, Distributed Computing Systems.}
+\resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
